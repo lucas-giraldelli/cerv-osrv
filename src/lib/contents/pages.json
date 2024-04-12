@@ -1,0 +1,66 @@
+
+{
+  "home": {
+    "title": "Nós podemos salvar o futuro",
+    "description": "Nossa missão é ajudar a promover e proteger os direitos humanos em todo o mundo.",
+    "buttonText": "Doação"
+  },
+  "news": {
+    "card": [
+      {
+        "title": "Doação de cestas básicas promovida pela Aprosoja",
+        "summary": "Aprosoja Mato Grosso com o projeto Prato do Bem fez a entrega de duas mil cestas básicas a 22 entidades assistenciais de Cuiabá e região. A parceria foi com a Associação Mato-Grossense de Magistrados (AMAM).",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "imageUrl": "images/photo-02.png",
+        "title": "Aperfeiçoamento",
+        "summary": "Mario Rondon, ministrou o Workshop para os diretores e coordenadores das Obras Sociais Rafael Verlangieri - Liderança relacional."
+      }
+    ]
+  },
+  "about": {
+    "options": [
+      {
+        "question": "Quem somos nós?",
+        "answer": "Conectamos ideias e recursos com outras ONGs para construir um mundo melhor para todos."
+      },
+      {
+        "question": "O que fazemos?",
+        "answer": "Promoção gratuita da educação; da cultura, a de saúde e a segurança alimentar; promoção da beneficência e assistencial social a pessoa humana; almeja o combate à pobreza; o fortalecimento das estruturas familiares."
+      },
+      {
+        "question": "Por que fazemos?",
+        "answer": "As ONGs têm alcance e estratégias estabelecidas para fornecer coletivamente soluções para os principais problemas sociais e culturais."
+      }
+    ]
+  },
+  "volunteer": {
+    "pixKey": "07.651.186/0001-98",
+    "how": {
+      "title": "Como suas doações nos ajudam",
+      "description": "Suas generosas doações por meio do PIX nos permitem fazer uma diferença real. Veja o impacto que suas contribuições causam abaixo."
+    },
+    "donate": {
+      "title": "Doe usando PIX",
+      "description": "Para fazer uma doação, basta escanear o código QR do PIX ou copiar a chave PIX abaixo em seu aplicativo bancário.",
+      "button": "Copiar chave PIX"
+    },
+    "stories": {
+      "title": "Histórias Impactantes",
+      "data": [
+        {
+          "title": "Construção de uma Escola",
+          "content": "Graças às suas doações, uma nova escola foi construída em uma área rural, proporcionando educação para 200 crianças."
+        },
+        {
+          "title": "Água Limpa para uma Vila",
+          "content": "Os fundos das doações ajudaram a instalar um novo sistema de purificação de água em uma vila remota."
+        }
+      ]
+    }
+  },
+  "tranparency": {
+    "title": "Programas e projetos"
+  }
+}

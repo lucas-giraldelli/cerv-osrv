@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "header_title": "OSRV",
+    "first_menu_item": "Quem somos",
+    "second_menu_item": "Eventos e Notícias",
+    "third_menu_item": "Quero ser voluntário",
+    "fourth_menu_item": "Transparência",
+    "button": "Doe"
+  },
+  "photoStack": {
+    "imageMain": "images/large_photo.png",
+    "imageTop": "images/top_small_photo.png",
+    "imageMiddle": "images/middle_small_photo.png",
+    "imageBottom": "images/bottom_small_photo.png"
+  },
+  "issues": [
+    {
+      "title": "Meninas e mulheres",
+      "description": "A igualdade de gênero é fundamental para a realização dos direitos humanos e um desejo de beneficiar a sociedade como um todo.",
+      "icon": "/icons/gender_equality.svg"
+    },
+    {
+      "title": "Envolvimento da comunidade",
+      "description": "Acreditamos que essa abordagem colaborativa é a chave para o sucesso a longo prazo de nossos programas educacionais.",
+      "icon": "/icons/community.svg"
+    },
+    {
+      "title": "Saúde e prevenção",
+      "description": "Trabalhamos em conjunto com outras ONGs reforçando recursos para garantir a prevenção de doenças e assistência médica para todas as pessoas.",
+      "icon": "/icons/health.svg"
+    },
+    {
+      "title": "Climate and environment",
+      "description": "We are working with the UN and its partners to collectively galvanize needed to address the climate challenge.",
+      "icon": "/icons/environment.svg"
+    }
+  ],
+  "carousel": {
+    "items": [
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-02.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-02.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-02.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-02.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-01.png"
+      },
+      {
+        "date": "JUNE 14",
+        "text": "Give smiles with your donation",
+        "imageUrl": "images/photo-02.png"
+      }
+    ]
+  },
+  "card": [
+    {
+      "imageUrl": "images/photo-01.png",
+      "title": "Judô lutando por um ideal",
+      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
+      "alt": "Children fighting judô"
+    },
+    {
+      "imageUrl": "images/photo-01.png",
+      "title": "Judô lutando por um ideal",
+      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
+      "alt": "Children fighting judô"
+    },
+    {
+      "imageUrl": "images/photo-01.png",
+      "title": "Judô lutando por um ideal",
+      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
+      "alt": "Children fighting judô"
+    },
+    {
+      "imageUrl": "images/photo-01.png",
+      "title": "Judô lutando por um ideal",
+      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
+      "alt": "Children fighting judô"
+    },
+    {
+      "imageUrl": "images/photo-01.png",
+      "title": "Judô lutando por um ideal",
+      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
+      "alt": "Children fighting judô"
+    }
+  ]
+}
