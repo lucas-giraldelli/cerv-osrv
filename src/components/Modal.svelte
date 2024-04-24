@@ -4,6 +4,7 @@
   export let isOpen: boolean;
   export let title: string = '';
   export let text: string = '';
+  export let text2: string = '';
 </script>
 
 {#if isOpen}
@@ -11,6 +12,7 @@
     <div class="contents">
       <h2>{title}</h2>
       <p>{text}</p>
+      <p>{text2}</p>
     </div>
   </div>
 {/if}

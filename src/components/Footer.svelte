@@ -1,24 +1,43 @@
 <script lang="ts">
   import Social from './Social.svelte';
   import type { SocialIconsProps } from '@rodneylab/svelte-social-icons/types/SocialIcons.svelte';
+  import { openModal } from 'svelte-modals';
 
-  const socials: Array<SocialIconsProps['network']> = ['facebook', 'twitter', 'instagram'];
+  function handleOpen(title: string, text: string = '') {
+    openModal(() => import('./Modal.svelte'), {
+      title,
+      text,
+      text2
+    });
+  }
+
+  const socials = [
+    {
+      name: 'facebook' as SocialIconsProps['network'],
+      href: 'https://www.facebook.com/osrafaelverlangieri/'
+    },
+    {
+      name: 'instagram' as SocialIconsProps['network'],
+      href: 'https://www.instagram.com/osrafaelverlangieri/'
+    }
+  ];
+  const title = 'Nosso endereço e contato';
+  const text = `Endereço: Rua Nova Mutum, quadra 31 lote 8  - Jardim Renascer, Cuiabá - MT, 78061-360`;
+  const text2 = `Telefone: (65) 99649-3092`;
 </script>
 
 <footer>
   <h2>OSRV</h2>
   <ul>
-    <li><a href="/">Apoiadores</a></li>
-    <li><a href="/">Transparência</a></li>
-    <li><a href="/">Endereços</a></li>
-    <li><a href="/">Contato</a></li>
+    <li><a href="/tranparency">Transparência</a></li>
+    <li><button on:click={() => handleOpen(title, text)}>Endereço e Contato</button></li>
   </ul>
 
-  <ul>
-    {#each socials as name}
+  <ul class="social-icons">
+    {#each socials as social}
       <li>
-        <a href="/">
-          <Social network={name} />
+        <a href={social.href} target="_blank">
+          <Social network={social.name} />
         </a>
       </li>
     {/each}
@@ -48,8 +67,16 @@
       align-items: center;
 
       gap: 2em;
+      padding: 0 !important;
+
       li {
         list-style: none;
+
+        button {
+          background: none;
+          color: white;
+          border: none;
+        }
 
         a {
           text-decoration: none;
