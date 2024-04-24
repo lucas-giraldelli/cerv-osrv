@@ -1,17 +1,25 @@
-<script>
+<script lang="ts">
   import compContent from '$lib/contents/components.json';
+  import { openModal } from 'svelte-modals';
 
   const issues = compContent.issues;
+
+  function handleOpen(title: string, text: string = '') {
+    openModal(() => import('./Modal.svelte'), {
+      title,
+      text: text.trim()
+    });
+  }
 </script>
 
 <section class="issues">
   <div class="issues-header">
-    <h2>Problemas</h2>
+    <h2>Serviços prestados</h2>
     <p>
       Buscamos alcançar melhores resultados e um desenvolvimento sustentável que nos permita
       proporcionar uma melhor qualidade de vida a comunidade do Bairro Jardim Renascer e arredores,
       em Cuiabá - MT, ofertando atividades como: Alfabetização e letramento matemático, xadrez,
-      judô, esportes radicais (slackline, skate e escalada) e trabalhos manuais e artesanias.
+      judô, esportes radicais (slackline, skate e escalada) e trabalhos manuais e artesanais.
     </p>
   </div>
 
@@ -23,6 +31,7 @@
         </div>
         <h3 class="issue-title">{issue.title}</h3>
         <p class="issue-description">{issue.description}</p>
+        <button on:click={() => handleOpen(issue.title, issue.text)}>LEIA MAIS</button>
       </div>
     {/each}
   </div>
@@ -65,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     width: 15em;
-    max-height: 24em;
+    max-height: 28em;
   }
 
   .issue-icon-container {

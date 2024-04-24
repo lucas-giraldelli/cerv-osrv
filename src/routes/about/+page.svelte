@@ -3,7 +3,9 @@
   import { inview } from 'svelte-inview';
   import content from '$lib/contents/pages.json';
 
-  const imageUrl = 'images/about_children.png';
+  const imageUrl = 'images/about_children.jpeg';
+  const imageUrl2 = 'images/about_children-02.jpeg';
+  const imageUrl3 = 'images/about_children-03.jpeg';
 
   let animateIssue: string;
 
@@ -17,6 +19,8 @@
 <section class="container">
   <div class="image-section">
     <img src={imageUrl} alt="Children engaging with technology" class="responsive-image" />
+    <img src={imageUrl2} alt="Children engaging with technology" class="responsive-image" />
+    <img src={imageUrl3} alt="Children engaging with technology" class="responsive-image" />
   </div>
   <div class="text-section">
     {#each options as option}
@@ -45,10 +49,18 @@
   }
 
   .image-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    gap: 5em;
     flex-basis: 100%;
     max-width: 100%;
     order: 1;
     animation: slideInFromLeft 1500ms ease forwards;
+
+    img {
+      border-radius: 15%;
+    }
   }
 
   .responsive-image {

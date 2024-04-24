@@ -9,6 +9,10 @@
 *::after {
   box-sizing: border-box;
 }
+::selection {
+  color: #000;
+  background: #ffcd43;
+}
 * {
   margin: 0;
 }

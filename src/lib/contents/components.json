@@ -9,30 +9,28 @@
   },
   "photoStack": {
     "imageMain": "images/large_photo.png",
-    "imageTop": "images/top_small_photo.png",
-    "imageMiddle": "images/middle_small_photo.png",
-    "imageBottom": "images/bottom_small_photo.png"
+    "imageTop": "images/top_small_photo.jpeg",
+    "imageMiddle": "images/middle_small_photo.jpeg",
+    "imageBottom": "images/bottom_small_photo.jpeg"
   },
   "issues": [
     {
-      "title": "Meninas e mulheres",
-      "description": "A igualdade de gênero é fundamental para a realização dos direitos humanos e um desejo de beneficiar a sociedade como um todo.",
-      "icon": "/icons/gender_equality.svg"
-    },
-    {
-      "title": "Envolvimento da comunidade",
-      "description": "Acreditamos que essa abordagem colaborativa é a chave para o sucesso a longo prazo de nossos programas educacionais.",
-      "icon": "/icons/community.svg"
+      "title": "Segurança alimentar",
+      "description": "Em um mundo marcado pela fome e pela desigualdade social, uma aliança essencial entre a OSRV e parceiros como o Sesc Mesa Brasil...",
+      "icon": "/icons/community.svg",
+      "text": "Em um mundo marcado pela fome e pela desigualdade social, uma aliança essencial entre a OSRV e parceiros como o Sesc Mesa Brasil, em uma parceria sólida e comprometida com a segurança alimenta se unem na luta contra a fome.Através da doação e distribuição de cestas básicas, legumes, verduras e frutas, buscamos garantir o acesso à alimentação nutritiva e de qualidade para famílias em situação de vulnerabilidade.Mais do que doar, nosso compromisso se estende à responsabilidade de garantir que cada item chegue às mãos das famílias de forma segura e higiênica. Afinal, a segurança alimentar vai além da quantidade de alimentos doados; ela engloba a qualidade, a procedência e o manejo adequado dos produtos doados.Nós reconhecemos a segurança alimentar como um direito humano fundamental. Por isso, nos dedicamos a garantir que todas as famílias que receberem nossos alimentos tenham acesso a produtos de qualidade, nutritivos, seguros e que contribuam para uma vida mais saudável e digna.Junte-se a nós nessa luta contra a fome! Doe alimentos, colabore como voluntário ou faça uma doação financeira. Sua contribuição pode fazer a diferença na vida de quem mais precisa!Em conjunto, podemos construir um futuro com mais segurança alimentar e justiça social para todos!"
     },
     {
       "title": "Saúde e prevenção",
-      "description": "Trabalhamos em conjunto com outras ONGs reforçando recursos para garantir a prevenção de doenças e assistência médica para todas as pessoas.",
-      "icon": "/icons/health.svg"
+      "description": "Cuidando da sua saúde mental de forma integral. Na busca por um atendimento completo e personalizado em saúde mental...",
+      "icon": "/icons/health.svg",
+      "text": "Cuidando da sua saúde mental de forma integralNa busca por um atendimento completo e personalizado em saúde mental, oferecemos um suporte abrangente para a sua saúde mental. Trabalhamos em conjunto com profissionais qualificados para garantir a prevenção de doenças, a promoção da saúde e a assistência médica para todas as pessoas.Nossos profissionais:    Psicólogos: Psicólogos: especialistas em diferentes áreas da psicologia, prontos para te ajudar com diversos desafios.    Psiquiatras: médicos especializados no diagnóstico e tratamento de transtornos mentais, com expertise em psicofármacos quando necessário.    Assistentes sociais: oferecem apoio e orientação em questões sociais e familiares que impactam a saúde mental.Nossos serviços:    Terapia individual: acompanhamento psicológico individualizado para lidar com diversos desafios, como ansiedade, depressão, estresse, luto, entre outros.    Terapia familiar: sessões que visam melhorar a comunicação e os relacionamentos entre os membros da família.    Práticas integrativas e complementares (PICS): oferecemos diversas PICS como acupuntura, yoga, meditação, reiki e outras, que podem ser utilizadas como complemento ao tratamento tradicional.As PICS são Práticas Integrativas e Complementares em Saúde (PICS) são recursos terapêuticos que visam a promoção da saúde e a prevenção de doenças. Reconhecidas pelo Ministério da Saúde, as PICS são oferecidas no SUS desde 2006.Alguns benefícios das PICS:    Redução do estresse e da ansiedade    Melhora da qualidade do sono    Aumento da disposição e da energia    Fortalecimento do sistema imunológico    Promoção do bem-estar físico e mentalNosso compromisso:Acreditamos que cada pessoa é única e merece um atendimento personalizado. Por isso, oferecemos um ambiente acolhedor e seguro para que você possa se expressar livremente e buscar o seu melhor estado de saúde mental."
     },
     {
-      "title": "Climate and environment",
-      "description": "We are working with the UN and its partners to collectively galvanize needed to address the climate challenge.",
-      "icon": "/icons/environment.svg"
+      "title": "Economia circular",
+      "description": "Localizado no prédio das Obras Sociais Rafael Verlangieri, o Brechó Rafael Moda Solidária (@brecho.rafael) é um negócio de impacto social que dá acesso...",
+      "icon": "/icons/environment.svg",
+      "text": "Localizado no prédio das Obras Sociais Rafael Verlangieri, o Brechó Rafael Moda Solidária (@brecho.rafael) é um negócio de impacto social que dá acesso a bens de consumo para a população de Cuiabá. Você encontrará uma variedade de peças de vestuário, calçados e acessórios em ótimo estado, a preços que cabem no seu bolso.  Produtos até 90% mais barato do que o valor tradicional. Todo o resultado de vendas é reinvestido em programas da OSRV.Para todos os gostos e estilos: Oferecemos peças para todos os gostos e estilos, desde roupas clássicas e atemporais até as últimas tendências da moda. Você encontrará:     Vestidos, blusas, calças, camisas, shorts, saias e muito mais.     Peças para homens, mulheres e crianças. Marcas nacionais e internacionais.     Calçados e acessórios para completar o seu look.Faça uma visita e confira:O Brechó Rafael Moda Solidária está aberto ao público de segunda a sábado, das 13h às 17h. Venha nos visitar e confira as novidades!Endereço: Rua Nova Mutum, 596 - B. Jardim Renascer, Cuiabá MTContato: Isabel (65) 9.8147 - 5260Redes sociais:Instagram: @brecho.rafaelJunte-se a nós!"
     }
   ],
   "carousel": {
@@ -91,34 +89,32 @@
   },
   "card": [
     {
-      "imageUrl": "images/photo-01.png",
-      "title": "Judô lutando por um ideal",
-      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
-      "alt": "Children fighting judô"
+      "imageUrl": "images/judo-01.jpeg",
+      "title": "Judô: Lutando por um ideal",
+      "summary": "Promover o desenvolvimento integral de crianças e  jovens moradores do bairro Renascer e entorno por meio da prática do judô, visando ...",
+      "alt": "Children fighting judô",
+      "text": "Promover o desenvolvimento integral de crianças e  jovens moradores do bairro Renascer e entorno por meio da prática do judô, visando não apenas a excelência técnica no esporte, mas também o crescimento pessoal, o respeito mútuo e a formação de cidadãos éticos e comprometidos com a sociedade.  A Atividade de Judô é compreendido como prática pedagógica escolar, de cunho esportivo-educacional que possibilita  aos beneficiários do projeto desenvolver e aprimorar conhecimentos teóricos e práticos do Judô, por meio de atividades lúdico-esportivas para o desenvolvimento dos aspectos físicos e motores proporcionados pelo esporte, além de aspectos psicológicos, sociais e afetivos. Esse desenvolvimento contribui para uma melhor inserção social e escolar fundamental para a auto estima das crianças e dos jovens. Atendemos 65 pessoas."
     },
     {
-      "imageUrl": "images/photo-01.png",
-      "title": "Judô lutando por um ideal",
-      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
-      "alt": "Children fighting judô"
+      "imageUrl": "images/xadrez-01.jpeg",
+      "title": "Xadrez: Cada lance uma vitória",
+      "summary": "O projeto de Xadrez tem como objetivo promover o desenvolvimento cognitivo, social e emocional dos participantes por meio do ensino e prática do jogo de xadrez...",
+      "alt": "Children fighting judô",
+      "text": "O projeto de Xadrez tem como objetivo promover o desenvolvimento cognitivo, social e emocional dos participantes por meio do ensino e prática do jogo de xadrez. O projeto beneficia crianças e  jovens através do ensino do  jogo de xadrez  contribuindo para superar as dificuldades do seu aprendizado Escolar de forma lúdica, prazerosa e espontânea. O xadrez é conhecido por estimular o pensamento crítico, a capacidade de análise e a resolução de problemas. A atividade visa desenvolver essas habilidades por meio da prática regular do jogo. O xadrez é um jogo que exige planejamento, concentração e calma. A atividades ajuda os participantes a desenvolverem essas qualidades. Os jogadores precisam pensar de forma criativa para encontrar estratégias eficazes e tomar decisões em diversas situações. A prática de xadrez em torneios e competições promove uma competição amigável e respeitosa entre os participantes.  Auxiliando ler, escrever, pensar e pesquisar, enfrentar desafios, superar derrotas, dar resposta positivas nas relações sociais. "
     },
     {
-      "imageUrl": "images/photo-01.png",
-      "title": "Judô lutando por um ideal",
-      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
-      "alt": "Children fighting judô"
+      "imageUrl": "images/esportes-radicais.jpeg",
+      "title": "Esportes Radicais, valorizando a cultura da comunidade",
+      "summary": "Atividade de esportes radicais proporciona uma experiência emocionante e desafiadora aos participantes, promovendo o desenvolvimento físico, mental e emocional...",
+      "alt": "Children fighting judô",
+      "text": "Atividade de esportes radicais proporciona uma experiência emocionante e desafiadora aos participantes, promovendo o desenvolvimento físico, mental e emocional por meio da prática de atividades esportivas que envolvem risco calculado. O objetivo é estimular a superação de limites pessoais, a autoconfiança e a conexão com a natureza, ao mesmo tempo em que prioriza a segurança e a responsabilidade. O projeto proporciona às crianças e adolescentes a pratica do slackline, skate e escalada. Os esportes radicais contribuem com a diminuição da evasão escolar e com a  formação de cidadãos críticos, reflexivos e autônomos, capazes de agir e modificar o contexto sociocultural em que vivem. Os esportes radicais também oferecem uma excelente oportunidade para melhorar a condição física, a resistência e a coordenação motora dos participantes. Ao enfrentar desafios e superar obstáculos, os participantes ganham confiança em suas habilidades e desenvolvem uma mentalidade de superação. A prática de esportes radicais envolve enfrentar situações imprevisíveis e desafiadoras, incentivando os participantes a desenvolver resiliência e capacidade de adaptação. A prática de esportes radicais requer planejamento, treinamento e atenção à segurança, promovendo disciplina e responsabilidade nos participantes."
     },
     {
-      "imageUrl": "images/photo-01.png",
-      "title": "Judô lutando por um ideal",
-      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
-      "alt": "Children fighting judô"
-    },
-    {
-      "imageUrl": "images/photo-01.png",
-      "title": "Judô lutando por um ideal",
-      "summary": "The pandemic in Africa has triggered the creativity of the new generations. The pan-African network of cyberactivist communities.",
-      "alt": "Children fighting judô"
+      "imageUrl": "images/alfabetizar-01.jpeg",
+      "title": "Alfabetizar para incluir",
+      "summary": "Esse projeto visa desenvolver ações que removam os obstáculos que impeçam  o desenvolvimento de crianças  e jovens na fase de aprendizagem escolar...",
+      "alt": "Children fighting judô",
+      "text": "Esse projeto visa desenvolver ações que removam os obstáculos que impeçam  o desenvolvimento de crianças  e jovens na fase de aprendizagem escolar. As atividades contribuem para que as crianças superem as dificuldades de aprendizagens de uma forma lúdica, prazerosa e espontânea, possibilitando melhor inserção na escola. O projeto tem como princípio a compreensão de que a leitura, a escrita e a compreensão de texto, numa sociedade letrada, são ferramentas mentais que possibilitam o desenvolvimento da criança e jovem em todas as outras áreas do conhecimento, entendendo que desde muito cedo a criança está inserida no mundo da escrita e é necessária alfabetizá-las de uma forma lúdica e prazerosa. O projeto proporciona uma base sólida para o desenvolvimento educacional, pessoal e profissional. O objetivo é empoderar os participantes, garantindo que eles tenham as ferramentas necessárias para interpretar, comunicar e navegar pelo mundo das letras e inúmeros de forma autônoma conquistando assim êxito na escola. Atendemos 25 crianças com cinco voluntários. "
     }
   ]
 }

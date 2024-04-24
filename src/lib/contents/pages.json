@@ -1,8 +1,8 @@
 
 {
   "home": {
-    "title": "Nós podemos salvar o futuro",
-    "description": "Nossa missão é ajudar a promover e proteger os direitos humanos em todo o mundo.",
+    "title": "Nós podemos fazer um futuro melhor",
+    "description": "Nossa visão é alcançar resultados duradouros e construir um futuro próspero para todos, por meio da colaboração e da participação ativa da comunidade.",
     "buttonText": "Doação"
   },
   "news": {
@@ -23,15 +23,15 @@
     "options": [
       {
         "question": "Quem somos nós?",
-        "answer": "Conectamos ideias e recursos com outras ONGs para construir um mundo melhor para todos."
+        "answer": "Em busca de um desenvolvimento sustentável e de uma melhor qualidade de vida para a comunidade do Bairro Jardim Renascer e arredores, em Cuiabá - MT, e as Obras Sociais Rafael Verlangieri acredita no poder transformador do envolvimento da comunidade.Nossa visão é alcançar resultados duradouros e construir um futuro próspero para todos, por meio da colaboração e da participação ativa da comunidade."
       },
       {
         "question": "O que fazemos?",
-        "answer": "Promoção gratuita da educação; da cultura, a de saúde e a segurança alimentar; promoção da beneficência e assistencial social a pessoa humana; almeja o combate à pobreza; o fortalecimento das estruturas familiares."
+        "answer": "Oferecemos uma gama de atividades que promovem o desenvolvimento integral dos indivíduos, desde a educação básica até a formação de cidadãos engajados e conscientes.Alfabetização e letramento matemático fortalecem as bases educacionais e abrem portas para o conhecimento. O xadrez estimula o raciocínio lógico, a concentração e a tomada de decisões. O judô ensina disciplina, respeito e autodefesa, além de promover a saúde física e mental. Esportes radicais (slackline, skate e escalada) incentivam a superação de limites, o trabalho em equipe e a aventura. Culinária e trabalhos manuais e artesanais desenvolvem a criatividade, a coordenação motora, a expressão artística e podem ser uma fonte de renda."
       },
       {
         "question": "Por que fazemos?",
-        "answer": "As ONGs têm alcance e estratégias estabelecidas para fornecer coletivamente soluções para os principais problemas sociais e culturais."
+        "answer": "Acreditamos que o envolvimento da comunidade é fundamental para o sucesso a longo prazo de nossos programas educacionais. Cria um senso de pertencimento e empoderamento: quando as pessoas se sentem parte da solução, elas se tornam mais propensas a se envolver e a cuidar de sua comunidade. Promove a colaboração e o compartilhamento de recursos: a comunidade se torna mais forte quando seus membros trabalham juntos em prol de um objetivo comum. Aumenta a sustentabilidade dos programas: o apoio da comunidade garante a continuidade das atividades e a longo prazo. Gera impacto social positivo: a comunidade se beneficia como um todo, com a redução da criminalidade, a melhoria da qualidade de vida e a construção de um futuro mais promissor."
       }
     ]
   },

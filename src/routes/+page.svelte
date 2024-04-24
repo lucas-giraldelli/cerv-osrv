@@ -24,6 +24,7 @@
     max-width: 50rem;
     margin: auto;
     padding: 6em 0;
+    padding-top: 2em;
     gap: 2em;
   }
 
@@ -36,6 +37,7 @@
       line-height: normal;
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      font-weight: 800 !important;
     }
 
     p {
