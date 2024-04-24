@@ -1,6 +1,7 @@
 <script lang="ts">
   import compContent from '$lib/contents/components.json';
   import { openModal } from 'svelte-modals';
+  import Button from './Button.svelte';
 
   const issues = compContent.issues;
 
@@ -31,7 +32,11 @@
         </div>
         <h3 class="issue-title">{issue.title}</h3>
         <p class="issue-description">{issue.description}</p>
-        <button on:click={() => handleOpen(issue.title, issue.text)}>LEIA MAIS</button>
+        <Button
+          size="read-more"
+          text="Leia mais"
+          onClick={() => handleOpen(issue.title, issue.text)}
+        />
       </div>
     {/each}
   </div>

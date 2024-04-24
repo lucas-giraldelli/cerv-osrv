@@ -1,6 +1,7 @@
 <script lang="ts">
   import compContent from '$lib/contents/components.json';
   import { openModal } from 'svelte-modals';
+  import Button from './Button.svelte';
 
   type card = (typeof compContent.card)[0];
 
@@ -24,16 +25,18 @@
   <div class="news-content">
     <div class="news-title">{card.title}</div>
     <div class="news-summary">{card.summary}</div>
-    <button on:click={() => handleModal(title, text)}>LEIA MAIS</button>
+    <Button size="read-more" text="Leia mais" onClick={() => handleModal(title, text)} />
   </div>
 </div>
 
 <style>
   .image-container {
-    max-height: 12em;
+    margin: 0;
   }
   .news-card {
-    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.8em;
     overflow: hidden;
     box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.1);
     background: #80808029;
@@ -50,9 +53,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 1em;
-    height: calc(100% - 13em);
   }
 
   .news-title {

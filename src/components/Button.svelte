@@ -1,11 +1,14 @@
 <script lang="ts">
-  type buttonSizes = 'small' | 'medium' | 'large';
+  type buttonSizes = 'small' | 'medium' | 'large' | 'read-more';
 
   export let size: buttonSizes = 'small';
   export let text: string;
+  export let onClick: () => void;
 </script>
 
-<a href="/volunteer" class={size}>{text}</a>
+<a href={size === 'read-more' ? null : '/volunteer'} on:click={onClick} class={size}>
+  {text}
+</a>
 
 <style lang="scss">
   .small {
@@ -24,8 +27,15 @@
     height: 2em;
   }
 
+  .read-more {
+    width: 7em;
+    height: 2em;
+    padding: 1em;
+  }
+
   a {
     border-radius: 8px;
+    cursor: pointer;
 
     background-color: #ffcd43;
     border: none;
@@ -39,5 +49,9 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      background-color: #ffd76b;
+    }
   }
 </style>

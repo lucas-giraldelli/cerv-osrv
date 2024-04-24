@@ -28,7 +28,7 @@
 
     & .card-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 1em;
       padding: 1em 0 4em 0;
     }

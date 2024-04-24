@@ -31,8 +31,8 @@
 
     .photo-top {
       position: absolute;
-      bottom: -12em;
-      left: 2em;
+      bottom: -11em;
+      left: 2.3em;
       z-index: 3;
       width: 8em;
     }
@@ -48,7 +48,7 @@
     .photo-bottom {
       position: absolute;
       top: -1em;
-      right: -2em;
+      right: -2.4em;
       z-index: 1;
       width: 10em;
     }
