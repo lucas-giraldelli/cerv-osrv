@@ -1,38 +1,44 @@
-# create-svelte
+# OSRV — Obras Sociais Rafael Verlangieri
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Site institucional da ONG OSRV, em Cuiabá/MT.
 
-## Creating a project
+**Stack:** Astro 4 · Tailwind CSS v3 · pnpm · deploy via FTP no Hostgator
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Desenvolvimento
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
+pnpm dev
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```bash
-npm run build
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+O output fica em `dist/`. O deploy é automatizado via GitHub Actions a cada push na branch `main`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deploy
+
+Configurado em `.github/workflows/deploy.yml`. Requer os seguintes secrets no repositório:
+
+- `FTP_HOST`
+- `FTP_USERNAME`
+- `FTP_PASSWORD`
+
+## Estrutura
+
+```
+src/
+  components/   # Componentes Astro reutilizáveis
+  layouts/      # Layout base (inclui nav, footer e modal global)
+  lib/contents/ # Conteúdo das páginas em JSON
+  pages/        # Rotas em português
+    quem-somos/
+    noticias/
+    voluntario/
+    transparencia/
+  styles/       # CSS global + Tailwind
+static/         # Arquivos públicos (imagens, fontes, favicon, robots.txt)
+```
