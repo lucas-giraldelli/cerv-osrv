@@ -72,3 +72,18 @@ button { cursor: pointer; }
 
 /* Native dialog backdrop */
 dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
+
+/* Center native dialog */
+#site-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  max-height: 90dvh;
+  width: calc(100% - 2rem);
+}
+#site-modal[open] {
+  display: flex;
+  flex-direction: column;
+}

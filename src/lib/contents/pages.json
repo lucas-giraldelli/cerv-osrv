@@ -8,6 +8,11 @@
   "news": {
     "card": [
       {
+        "title": "Mac Dia Feliz na OSRV",
+        "summary": "Nossas crianças foram agraciadas com a adoção de hambúrguer do Mac Dia Feliz, ação desenvolvida pela APAE em parceria com o McDonald's. Foram distribuídos lanches para todos os participantes dos projetos.",
+        "imageUrl": "/images/mac-dia-feliz.jpeg"
+      },
+      {
         "title": "Doação de cestas básicas promovida pela Aprosoja",
         "summary": "Aprosoja Mato Grosso com o projeto Prato do Bem fez a entrega de duas mil cestas básicas a 22 entidades assistenciais de Cuiabá e região. A parceria foi com a Associação Mato-Grossense de Magistrados (AMAM).",
         "imageUrl": "/images/photo-01.png"

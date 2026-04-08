@@ -10,15 +10,15 @@ const { nav: items } = nav;
 
     <!-- Desktop links -->
     <ul class="hidden md:flex gap-6 list-none m-0">
-      <li><a href="/about"        class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.first_menu_item}</a></li>
-      <li><a href="/news"         class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.second_menu_item}</a></li>
-      <li><a href="/volunteer"    class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.third_menu_item}</a></li>
-      <li><a href="/tranparency"  class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.fourth_menu_item}</a></li>
+      <li><a href="/quem-somos"    class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.first_menu_item}</a></li>
+      <li><a href="/noticias"      class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.second_menu_item}</a></li>
+      <li><a href="/voluntario"    class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.third_menu_item}</a></li>
+      <li><a href="/transparencia" class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.fourth_menu_item}</a></li>
     </ul>
 
     <!-- Desktop CTA -->
     <a
-      href="/volunteer"
+      href="/voluntario"
       class="hidden md:inline-flex items-center justify-center px-5 py-2 bg-accent rounded-lg font-extrabold text-black no-underline hover:bg-yellow-400 transition-colors"
     >
       {items.button}
@@ -40,12 +40,12 @@ const { nav: items } = nav;
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
     <ul class="list-none m-0 flex flex-col divide-y divide-gray-50">
-      <li><a href="/about"       class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.first_menu_item}</a></li>
-      <li><a href="/news"        class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.second_menu_item}</a></li>
-      <li><a href="/volunteer"   class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.third_menu_item}</a></li>
-      <li><a href="/tranparency" class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.fourth_menu_item}</a></li>
+      <li><a href="/quem-somos"    class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.first_menu_item}</a></li>
+      <li><a href="/noticias"      class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.second_menu_item}</a></li>
+      <li><a href="/voluntario"    class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.third_menu_item}</a></li>
+      <li><a href="/transparencia" class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.fourth_menu_item}</a></li>
       <li class="px-6 py-4">
-        <a href="/volunteer" class="inline-flex items-center justify-center px-5 py-2 bg-accent rounded-lg font-extrabold text-black no-underline">
+        <a href="/voluntario" class="inline-flex items-center justify-center px-5 py-2 bg-accent rounded-lg font-extrabold text-black no-underline">
           {items.button}
         </a>
       </li>
