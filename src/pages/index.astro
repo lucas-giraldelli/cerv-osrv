@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PhotoStack from '../components/PhotoStack.astro';
+import Issues from '../components/Issues.astro';
+import content from '../lib/contents/pages.json';
+
+const { title, description, buttonText } = content.home;
+---
+<Layout title="OSRV - Início">
+  <!-- Hero -->
+  <section class="flex flex-col sm:flex-row items-start justify-center gap-8 py-8 sm:py-16 max-w-4xl mx-auto">
+    <div class="flex-1 anim-left">
+      <h1 class="text-[#006ca8] text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+        {title}
+      </h1>
+      <p class="text-base text-gray-700 mb-8 max-w-sm leading-relaxed">
+        {description}
+      </p>
+      <a
+        href="/volunteer"
+        class="inline-flex items-center justify-center px-8 py-3 bg-accent rounded-lg font-extrabold text-xl text-black no-underline hover:bg-yellow-400 transition-colors"
+      >
+        {buttonText}
+      </a>
+    </div>
+    <PhotoStack />
+  </section>
+
+  <!-- Services section -->
+  <section data-inview>
+    <Issues />
+  </section>
+</Layout>

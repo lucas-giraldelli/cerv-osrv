@@ -10,10 +10,10 @@
       {
         "title": "Doação de cestas básicas promovida pela Aprosoja",
         "summary": "Aprosoja Mato Grosso com o projeto Prato do Bem fez a entrega de duas mil cestas básicas a 22 entidades assistenciais de Cuiabá e região. A parceria foi com a Associação Mato-Grossense de Magistrados (AMAM).",
-        "imageUrl": "images/photo-01.png"
+        "imageUrl": "/images/photo-01.png"
       },
       {
-        "imageUrl": "images/photo-02.png",
+        "imageUrl": "/images/photo-02.png",
         "title": "Aperfeiçoamento",
         "summary": "Mario Rondon, ministrou o Workshop para os diretores e coordenadores das Obras Sociais Rafael Verlangieri - Liderança relacional."
       }

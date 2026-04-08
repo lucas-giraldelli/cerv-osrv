@@ -1,0 +1,90 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'OSRV - Obras Sociais Rafael Verlangieri' } = Astro.props;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.png" />
+  </head>
+  <body>
+    <Navigation />
+    <main
+      class="min-h-[90vh] px-4 sm:px-8 md:px-16 lg:px-48 pt-8 pb-0"
+      style="background-image: url('/images/world_bg.png'); background-repeat: no-repeat; background-size: contain; background-position: top right;"
+    >
+      <slot />
+    </main>
+    <Footer />
+
+    <!-- Global modal (native <dialog>) -->
+    <dialog
+      id="site-modal"
+      class="rounded-xl p-0 w-full max-w-lg shadow-2xl"
+    >
+      <div class="p-8">
+        <h2 id="modal-title" class="text-2xl font-semibold text-center mb-2"></h2>
+        <div class="max-h-[60vh] overflow-y-auto mt-4 space-y-3">
+          <p id="modal-text" class="text-gray-700 text-center leading-relaxed"></p>
+          <p id="modal-text2" class="text-gray-700 text-center leading-relaxed"></p>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <button
+            id="modal-close"
+            class="px-6 py-2 bg-accent rounded-lg font-bold hover:bg-yellow-400 transition-colors"
+          >
+            Fechar
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      const modal = document.getElementById('site-modal') as HTMLDialogElement;
+
+      document.addEventListener('click', (e) => {
+        const trigger = (e.target as Element).closest('[data-modal]');
+        if (!trigger) return;
+        const title  = trigger.getAttribute('data-modal-title')  ?? '';
+        const text   = trigger.getAttribute('data-modal-text')   ?? '';
+        const text2  = trigger.getAttribute('data-modal-text2')  ?? '';
+        (document.getElementById('modal-title')  as HTMLElement).textContent = title;
+        (document.getElementById('modal-text')   as HTMLElement).textContent = text;
+        (document.getElementById('modal-text2')  as HTMLElement).textContent = text2;
+        modal.showModal();
+      });
+
+      modal.addEventListener('click', (e) => {
+        const rect = modal.getBoundingClientRect();
+        const outside =
+          e.clientX < rect.left || e.clientX > rect.right ||
+          e.clientY < rect.top  || e.clientY > rect.bottom;
+        if (outside) modal.close();
+      });
+
+      document.getElementById('modal-close')?.addEventListener('click', () => modal.close());
+
+      // Scroll-triggered animations
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('[data-inview]').forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

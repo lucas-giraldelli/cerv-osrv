@@ -1,0 +1,28 @@
+---
+interface Props {
+  imageUrl: string;
+  title: string;
+  summary: string;
+  alt: string;
+  text: string;
+}
+
+const { imageUrl, title, summary, alt, text } = Astro.props;
+---
+<div class="bg-gray-100 rounded-xl overflow-hidden shadow-md flex flex-col">
+  <div class="overflow-hidden h-48">
+    <img src={imageUrl} alt={alt} class="w-full h-full object-cover" loading="lazy" />
+  </div>
+  <div class="p-5 flex flex-col flex-1 gap-3">
+    <h3 class="text-xl font-medium leading-snug min-h-[3.5rem]">{title}</h3>
+    <p class="text-sm text-gray-600 leading-relaxed flex-1">{summary}</p>
+    <button
+      class="self-start px-4 py-2 bg-accent rounded-lg font-bold text-sm hover:bg-yellow-400 transition-colors"
+      data-modal
+      data-modal-title={title}
+      data-modal-text={text}
+    >
+      Leia mais
+    </button>
+  </div>
+</div>

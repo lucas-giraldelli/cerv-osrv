@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Carousel from '../../components/Carousel.astro';
+import content from '../../lib/contents/pages.json';
+
+const newsItems = content.news.card;
+---
+<Layout title="OSRV - Eventos e Notícias">
+  <section class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-8">Últimas notícias</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 anim-grow">
+      {newsItems.map((item) => (
+        <article class="flex flex-col sm:flex-row rounded-xl overflow-hidden shadow-md">
+          <div
+            class="sm:w-2/5 h-48 sm:h-auto bg-cover bg-center"
+            style={`background-image: url(${item.imageUrl});`}
+            role="img"
+            aria-label={item.title}
+          ></div>
+          <div class="flex-1 flex flex-col justify-between p-5 bg-slate-100">
+            <div>
+              <h2 class="text-lg font-medium mb-3 leading-snug">{item.title}</h2>
+              <p class="text-sm text-slate-500 leading-relaxed">{item.summary}</p>
+            </div>
+            <button class="self-end mt-4 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-blue-700 transition-colors">
+              →
+            </button>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-16 mb-12" data-inview>
+      <h2 class="text-2xl font-bold text-center mb-6">Fotos de eventos</h2>
+      <Carousel />
+    </div>
+  </section>
+</Layout>

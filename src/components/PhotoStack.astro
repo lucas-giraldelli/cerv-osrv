@@ -1,0 +1,10 @@
+---
+import comp from '../lib/contents/components.json';
+const { imageMain, imageTop, imageMiddle, imageBottom } = comp.photoStack;
+---
+<article class="photo-stack anim-right hidden sm:block shrink-0">
+  <img class="photo-main"   src={imageMain}   alt="Crianças em atividade" />
+  <img class="photo-top"    src={imageTop}    alt="Criança andando de skate" />
+  <img class="photo-middle" src={imageMiddle} alt="Crianças lutando judô" />
+  <img class="photo-bottom" src={imageBottom} alt="Criança escrevendo" />
+</article>

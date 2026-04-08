@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import comp from '../../lib/contents/components.json';
+import content from '../../lib/contents/pages.json';
+
+const cards = comp.card;
+const { title } = content.tranparency;
+---
+<Layout title="OSRV - Transparência">
+  <section class="anim-left pb-12">
+    <h1 class="text-3xl font-bold mb-8">{title}</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {cards.map((card) => (
+        <Card
+          imageUrl={card.imageUrl}
+          title={card.title}
+          summary={card.summary}
+          alt={card.alt}
+          text={card.text}
+        />
+      ))}
+    </div>
+  </section>
+</Layout>

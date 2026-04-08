@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../lib/contents/pages.json';
+import QRCode from 'qrcode';
+
+const { how, donate, pixKey } = content.volunteer;
+const qrDataUrl = await QRCode.toDataURL(pixKey, { width: 288, margin: 2 });
+---
+<Layout title="OSRV - Voluntário e Doações">
+  <div class="max-w-2xl mx-auto space-y-6 py-4">
+
+    <!-- How donations help -->
+    <section class="bg-gray-50 rounded-xl p-8 anim-grow">
+      <h2 class="text-2xl font-semibold mb-3">{how.title}</h2>
+      <p class="text-gray-600 leading-relaxed">{how.description}</p>
+    </section>
+
+    <!-- PIX donation -->
+    <section class="bg-gray-50 rounded-xl p-8 anim-grow">
+      <h2 class="text-2xl font-semibold mb-3">{donate.title}</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">{donate.description}</p>
+
+      <div class="flex flex-col items-center gap-4">
+        <img
+          src={qrDataUrl}
+          alt="QR Code para doação via PIX"
+          class="w-60 h-60 rounded-lg border border-gray-200"
+        />
+        <p class="font-mono text-sm text-gray-500">{pixKey}</p>
+        <button
+          id="copy-pix"
+          class="px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+        >
+          {donate.button}
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Simple toast -->
+  <div
+    id="toast"
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-dark text-white text-sm px-5 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-300"
+    aria-live="polite"
+  ></div>
+
+  <script define:vars={{ pixKey }}>
+    const btn   = document.getElementById('copy-pix');
+    const toast = document.getElementById('toast');
+    let timer;
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.style.opacity = '1';
+      clearTimeout(timer);
+      timer = setTimeout(() => { toast.style.opacity = '0'; }, 3000);
+    }
+
+    btn?.addEventListener('click', () => {
+      navigator.clipboard.writeText(pixKey)
+        .then(()  => showToast('Chave PIX copiada para área de transferência!'))
+        .catch(()  => showToast('Não foi possível copiar o PIX.'));
+    });
+  </script>
+</Layout>

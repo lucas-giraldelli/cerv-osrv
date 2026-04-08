@@ -1,0 +1,39 @@
+---
+import comp from '../lib/contents/components.json';
+const items = comp.carousel.items;
+---
+<div class="relative">
+  <div
+    id="carousel"
+    class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pb-4"
+  >
+    {items.map((item) => (
+      <div
+        class="snap-start shrink-0 relative h-[380px] w-[280px] sm:w-[300px] rounded-2xl overflow-hidden shadow-xl"
+        style={`background-image: url(${item.imageUrl}); background-size: cover; background-position: center;`}
+      >
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+        <span class="absolute top-4 left-4 text-white text-sm z-10 font-medium">{item.date}</span>
+        <span class="absolute bottom-14 left-4 right-4 text-white text-base z-10 font-medium leading-snug">{item.text}</span>
+        <button class="absolute bottom-4 right-4 z-10 text-white border border-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white/20 transition-colors">
+          →
+        </button>
+      </div>
+    ))}
+  </div>
+
+  <div class="flex gap-3 mt-2">
+    <button id="carousel-prev" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition-colors" aria-label="Anterior">←</button>
+    <button id="carousel-next" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition-colors" aria-label="Próximo">→</button>
+  </div>
+</div>
+
+<script>
+  const carousel = document.getElementById('carousel')!;
+  const prev     = document.getElementById('carousel-prev')!;
+  const next     = document.getElementById('carousel-next')!;
+  const step     = 300 + 16;
+
+  prev.addEventListener('click', () => carousel.scrollBy({ left: -step, behavior: 'smooth' }));
+  next.addEventListener('click', () => carousel.scrollBy({ left:  step, behavior: 'smooth' }));
+</script>

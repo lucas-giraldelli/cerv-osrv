@@ -1,0 +1,72 @@
+---
+import nav from '../lib/contents/components.json';
+const { nav: items } = nav;
+---
+<header class="sticky top-0 z-20 bg-white shadow-sm">
+  <nav class="flex items-center justify-between px-4 sm:px-8 py-3 max-w-7xl mx-auto">
+    <a href="/" class="text-primary text-2xl font-bold no-underline">
+      {items.header_title}
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="hidden md:flex gap-6 list-none m-0">
+      <li><a href="/about"        class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.first_menu_item}</a></li>
+      <li><a href="/news"         class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.second_menu_item}</a></li>
+      <li><a href="/volunteer"    class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.third_menu_item}</a></li>
+      <li><a href="/tranparency"  class="text-nav-text no-underline hover:text-primary transition-colors text-sm font-medium">{items.fourth_menu_item}</a></li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <a
+      href="/volunteer"
+      class="hidden md:inline-flex items-center justify-center px-5 py-2 bg-accent rounded-lg font-extrabold text-black no-underline hover:bg-yellow-400 transition-colors"
+    >
+      {items.button}
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button
+      id="menu-toggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      class="md:hidden flex flex-col gap-[5px] p-1"
+    >
+      <span class="block w-6 h-0.5 bg-nav-text rounded transition-all duration-300" id="bar1"></span>
+      <span class="block w-6 h-0.5 bg-nav-text rounded transition-all duration-300" id="bar2"></span>
+      <span class="block w-6 h-0.5 bg-nav-text rounded transition-all duration-300" id="bar3"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+    <ul class="list-none m-0 flex flex-col divide-y divide-gray-50">
+      <li><a href="/about"       class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.first_menu_item}</a></li>
+      <li><a href="/news"        class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.second_menu_item}</a></li>
+      <li><a href="/volunteer"   class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.third_menu_item}</a></li>
+      <li><a href="/tranparency" class="block px-6 py-3 text-nav-text no-underline hover:bg-gray-50">{items.fourth_menu_item}</a></li>
+      <li class="px-6 py-4">
+        <a href="/volunteer" class="inline-flex items-center justify-center px-5 py-2 bg-accent rounded-lg font-extrabold text-black no-underline">
+          {items.button}
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle')!;
+  const menu   = document.getElementById('mobile-menu')!;
+  const bar1   = document.getElementById('bar1')!;
+  const bar2   = document.getElementById('bar2')!;
+  const bar3   = document.getElementById('bar3')!;
+  let open = false;
+
+  toggle.addEventListener('click', () => {
+    open = !open;
+    menu.classList.toggle('hidden', !open);
+    toggle.setAttribute('aria-expanded', String(open));
+    bar1.style.transform = open ? 'rotate(45deg) translate(5px, 5px)'  : '';
+    bar2.style.opacity   = open ? '0' : '';
+    bar3.style.transform = open ? 'rotate(-45deg) translate(5px, -5px)' : '';
+  });
+</script>
